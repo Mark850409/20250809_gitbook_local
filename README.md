@@ -33,7 +33,7 @@ GItbook(local)
 
 1. 請先確定`windows`有安裝`nodejs&&npm`
 
-![](https://markweb.idv.tw/uploads/upload_85c09b180f9136ea0c7843bbd8fc2b1a.png)
+![](https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/refs/heads/master/image/upload_85c09b180f9136ea0c7843bbd8fc2b1a.png)
 
 
 > [!note] 小提示
@@ -49,7 +49,7 @@ npm install -g gitbook-cli
 
 看到此畫面表示安裝成功
 
-![](https://markweb.idv.tw/uploads/202407211523142.png)
+![](https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/refs/heads/master/image/202407211523142.png)
 
 
 
@@ -507,49 +507,49 @@ if __name__ == '__main__':
 python gitbook-auto-summary.py -o .
 ```
 
-![](https://markweb.idv.tw/uploads/upload_841961cccd8efca71e75c408119c0da4.png)
+![](https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/refs/heads/master/image/upload_841961cccd8efca71e75c408119c0da4.png)
 
 5. 如果產生目錄檔案後發現檔案編碼不是`UTF-8`，記得要用`NOTEPAD++`改一下
 
-![](https://markweb.idv.tw/uploads/upload_ee8e50af40d6cdb0d248ec7a933928c9.png)
+![](https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/refs/heads/master/image/upload_ee8e50af40d6cdb0d248ec7a933928c9.png)
 
 6. 輸入以下指令，初始化gitbook
 ```bash
 gitbook init
 ```
-![](https://markweb.idv.tw/uploads/upload_4761bcb86e20c8bce710357b81bd26e7.png)
+![](https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/refs/heads/master/image/upload_4761bcb86e20c8bce710357b81bd26e7.png)
 
 7. 輸入以下指令，安裝gitbook套件
 ```bash
 gitbook install
 ```
-![](https://markweb.idv.tw/uploads/upload_039a470ebb62a9165bfe68ca31759531.png)
+![](https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/refs/heads/master/image/upload_039a470ebb62a9165bfe68ca31759531.png)
 
 8. 輸入以下指令，打包gitbook
 ```bash
 gitbook build
 ```
-![](https://markweb.idv.tw/uploads/upload_fd926e44323fcaef7c79c65941361556.png)
+![](https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/refs/heads/master/image/upload_fd926e44323fcaef7c79c65941361556.png)
 
 9. 輸入以下指令，部署gitbook
 ```bash
 gitbook serve
 ```
-![](https://markweb.idv.tw/uploads/upload_032b5d19c39ea3c5d08b18d3bfc2d63c.png)
+![](https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/refs/heads/master/image/upload_032b5d19c39ea3c5d08b18d3bfc2d63c.png)
 
 
 > [!note] 小提示
 >這問題目前是個bug，官方尚未提出解決方案，請依照上面路徑，將62~64行註解掉即可。
 
-![](https://markweb.idv.tw/uploads/202407211533408.png)
+![](https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/refs/heads/master/image/202407211533408.png)
 
-![](https://markweb.idv.tw/uploads/202407211542480.png)
+![](https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/refs/heads/master/image/202407211542480.png)
 
 
 ## 三、成功畫面
 看到如下圖畫面表示成功
 
-![](https://markweb.idv.tw/uploads/upload_4d680e8d915f94c256ce077b72c93d90.png)
+![](https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/refs/heads/master/image/upload_4d680e8d915f94c256ce077b72c93d90.png)
 
 ---
 tags: GITBOOK
