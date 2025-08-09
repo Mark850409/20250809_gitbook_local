@@ -1,0 +1,540 @@
+.sidebar-header h1{
+	font-size: 18px;
+}
+
+/* 左側目錄樣式 */
+.book-anchor .selected {
+    color: #518fc7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 左側目錄hover效果 */
+.book-anchor a:hover{
+    color: #518fc7;
+    text-decoration: none;
+}
+
+/* 已讀指示器樣式 */
+.book-summary .read-indicator {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* 已讀清單樣式 */
+.book-summary .read-indicator:before {
+  content: "✓";
+}
+
+/* 調整摘要列表項的顯示方式 */
+.book-summary ul.summary li a,
+.book-summary ul.summary li span {
+    display: inline-block !important;
+}
+
+/* 頁首搜索框樣式 */
+.header-inner #book-search-input {
+    float: right;
+    width: 300px;
+    margin: 10px 0;
+    padding: 0;
+    border: none;
+    background: #518fc7;
+    user-select: none;
+}
+
+/* 頁首導航選中項樣式 */
+.header-inner .header-nav li a.active {
+    color: #518fc7;
+}
+
+/* 頁首導航hover效果 */
+.header-inner .header-nav li a:hover{
+    border: 1px solid #518fc7;
+    border-radius: 8px;
+    color:#518fc7;
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: all 0.3s;
+}
+
+/* 程式碼區塊樣式 */
+pre[class*="language-"] {
+    margin: 0 !important;
+}
+
+/* 自定義分隔線樣式 */
+hr.custom-divider {
+    display: block !important;
+    border: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+/* 一般分隔線樣式 */
+.divider{
+    display: block !important;
+    border: 0.5px solid #eee;
+    margin: 20px 0;
+}
+
+/* 調整Markdown分隔線高度 */
+.markdown-section hr {
+    height: 1px !important;
+    background-color: transparent !important;
+}
+
+/* 全局字體設置 */
+body {
+  font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "\9ED1\4F53", Arial, sans-serif;
+  letter-spacing: .2px;
+  text-rendering: optimizeLegibility;
+}
+
+/* Markdown標題樣式 */
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5,
+.markdown-section h6 {
+  margin-bottom: .5em;
+  font-weight: 400;
+}
+
+/* Markdown段落樣式 */
+.markdown-section p {
+  line-height: 2;
+}
+
+/* Markdown圖片樣式 */
+.markdown-section img {
+  padding: 8px;
+  background: #e4e4e478;
+  transition: all 1s;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px #dcdcdc;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 95%;
+}
+
+/* Markdown圖片hover效果 */
+.markdown-section img:hover {
+  box-shadow: 0 0 10px #bbb
+}
+
+/* 觸發器顏色 */
+.exc-trigger {
+  color: #333333;
+}
+
+/* 隱藏導航 */
+.navigation {
+  display: none;
+}
+
+/* 書籍摘要標題樣式 */
+.book-summary-title {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 30px;
+  font-size: 16px;
+  color: #adadad;
+}
+
+/* 調整書籍摘要和主體位置 */
+.book-summary,
+.book-body {
+  top: 80px;
+}
+
+/* 書籍摘要活動項背景 */
+.book-summary ul.summary li.active {
+  background: #f3f1f1;
+}
+
+/* 書籍摘要活動項鏈接樣式 */
+.book-summary ul.summary li.active>a {
+  color: #7E57C2;
+  text-decoration: none;
+}
+
+/* 書籍摘要鏈接hover效果 */
+.book-summary ul.summary li a:hover {
+  text-decoration: none;
+}
+
+/* 頁面內容樣式 */
+.page-inner {
+  max-width: none;
+  padding: 20px 270px 40px 40px;
+}
+
+/* 頁首搜索輸入框樣式 */
+.header-inner #book-search-input {
+  float: right;
+  width: 300px;
+  margin: 10px 0;
+  padding: 0;
+  border: none;
+  background: #7E57C2;
+  user-select: none;
+}
+
+/* 頁首搜索輸入框文本樣式 */
+.header-inner #book-search-input input[type="text"] {
+  width: 80%;
+  background: #e4e4e4;
+}
+
+/* 頁首搜索按鈕樣式 */
+.header-inner #book-search-input #searchBtn {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* 頁首搜索按鈕hover效果 */
+.header-inner #book-search-input #searchBtn:hover {
+  color: #eae8e8;
+}
+
+/* 頁首內容樣式 */
+.header-inner {
+  width: 100%;
+  padding: 10px 30px;
+  border-bottom: 1px solid #dededede;
+  margin: auto;
+  *zoom: 1;
+  height: 80px;
+}
+
+/* 清除浮動 */
+.header-inner:before,
+.header-inner:after {
+  content: " ";
+  display: table;
+  line-height: 0;
+}
+
+.header-inner:after {
+  clear: both;
+}
+
+/* 頁首logo樣式 */
+.header-inner .logo {
+  float: left;
+  height: 50px;
+  width: 120px;
+  background: url('../logo.png');
+  background-size: 120px 50px;
+  background-repeat: no-repeat;
+}
+
+/* 頁首logo圖片樣式 */
+.header-inner .logo img {
+  display: block;
+  height: inherit;
+  padding: 5px 0;
+}
+
+/* 頁首標題樣式 */
+.header-inner .title {
+  float: left;
+  line-height: 60px;
+  margin-left: 10px;
+  color: #575656;
+}
+
+/* 頁首導航樣式 */
+.header-inner .header-nav {
+  list-style: none;
+  margin: 10px 20px 0 0;
+  padding: 0;
+  float: right;
+  display: table;
+}
+
+/* 頁首導航項樣式 */
+.header-inner .header-nav li {
+  display: table-cell;
+  vertical-align: middle;
+  min-width: 50px;
+  margin-right: 20px;
+  padding: 8px 10px 8px 10px;
+}
+
+/* 頁首導航鏈接樣式 */
+.header-inner .header-nav li a {
+  color: #333333;
+}
+
+/* 頁首導航鏈接hover和活動狀態 */
+.header-inner .header-nav li a:hover,
+.header-inner .header-nav li a.active {
+  color: #7E57C2;
+}
+
+/* 頁首導航活動鏈接hover效果 */
+.header-inner .header-nav li a.active:hover {
+  cursor: #7E57C2;
+}
+
+/* 頁首導航活動鏈接hover效果 */
+.header-inner .header-nav li a.active:hover {
+  cursor: #7E57C2;
+}
+
+/* 響應式設計 - 平板 */
+@media (max-width: 768px) {
+  .book-summary,
+  .book-body {
+    top: 200px;
+  }
+  .header-inner #book-search-input {
+    clear: both;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* 書籍錨點樣式 */
+.book-anchor {
+  width: 180px;
+  position: absolute;
+  top: 130px;
+  right: 30px;
+  padding: 0 10px 10px 10px;
+  z-index: 999;
+  user-select: none;
+  border-left: 2px solid #ececec;
+}
+
+/* 書籍錨點標題樣式 */
+.book-anchor-title {
+  line-height: 38px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* 書籍錨點鏈接樣式 */
+.book-anchor a {
+  display: block;
+  line-height: 25px;
+  color: #656565;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 書籍錨點鏈接hover效果 */
+.book-anchor a:hover {
+  color: #7E57C2;
+  text-decoration: none;
+}
+
+/* 書籍錨點選中項樣式 */
+.book-anchor .selected {
+  color: #7E57C2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 書籍錨點不同級別標題縮進 */
+.book-anchor .anchor-h1 {}
+.book-anchor .anchor-h2 {
+  padding-left: 20px;
+}
+.book-anchor .anchor-h3{
+  padding-left: 30px;
+}
+
+/* 已讀標記樣式 */
+.read-marker {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px; 
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-check" viewBox="0 0 16 16"><path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05L8.477 10.5a.75.75 0 0 1-1.08.02L4.324 7.384a.75.75 0 1 1 1.08-1.04L8 8.477l2.97-3.507z"/></svg>') no-repeat center center !important;
+  vertical-align: middle; 
+}
+
+/* 章節標題樣式 */
+.chapter-title {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+/* 文章標籤、分類樣式 */
+.tags-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tags-map a {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.tags-map a:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* 文章結尾樣式 */
+.info-box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-left: 5px solid;
+}
+
+.info-box p {
+  margin: 5px 0;
+}
+
+.info-box p:first-child {
+  font-weight: bold;
+}
+
+.info-box a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+}
+
+
+/* 響應式設計 - 小屏幕設備 */
+@media screen and (max-width: 1024px) {
+  .book {
+    padding: 15px;
+  }
+   #theme-toggle {
+        left: 20px !important; /* 在較小的屏幕上總是靠左 */
+        bottom: 20px !important; /* 避免與移動版底部導航欄重疊 */
+        z-index: 1000
+    }
+    
+    .book.with-summary #theme-toggle,
+    .book.without-summary #theme-toggle {
+        left: 20px !important;
+    }
+}
+
+/* 響應式設計 - 平板 */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px !important;
+  }
+  
+  .book {
+    padding: 10px;
+  }
+  .book-anchor{
+    display: none;
+  }
+  .page-inner {
+    padding: 20px 15px 40px 15px !important;
+  }
+  .book-search-input {
+    max-width: 200px;
+  }
+
+  .book-search-input input {
+    font-size: 14px;
+    padding: 6px 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+   .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header-nav {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+    padding: none; 
+    float: none; 
+  }
+  
+  .book-anchor {
+    margin-left: 0;
+    font-size: 12px;
+  }
+}
+
+/* 響應式設計 - 手機 */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px !important;
+  }
+  .header-inner .title {
+    font-size: 16px;
+}
+  
+  .book {
+    padding: 5px;
+  }
+  .book-anchor{
+    display: none;
+  }
+  .page-inner {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 15px 40px 15px !important;
+  }
+  .book-search-input {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .header-inner {
+    padding: 5px 10px;
+  }
+  
+  .header-nav {
+    flex-wrap: wrap;
+  }
+  
+  .book-anchor {
+    margin-top: 5px;
+    font-size: 11px;
+  }
+
+  .header-inner .header-nav {
+    margin: 0; 
+    float: none; 
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "gitbook-plugin-mycustompage-footer-ex": "^1.0.4",
+    "github-slugid": "^1.0.1",
+    "he": "^1.2.0",
+    "js-yaml": "^4.1.0",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.45",
+    "prismjs": "^1.29.0"
+  }
+}

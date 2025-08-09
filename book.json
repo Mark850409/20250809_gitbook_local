@@ -1,0 +1,199 @@
+{
+    "title": "ZaneHSU的個人技術文章",
+    "author": "ZaneHSU",
+    "description": "knowhow來自於個人經驗的累積",
+    "theme-default":
+    {
+        "showLevel": true
+    },
+    "language": "zh-hans",
+    "plugins":
+    [
+        "-fontsettings",
+        "heading-anchors",
+        "splitter",
+        "hide-element",
+        "expandable-chapters-small",
+        "sidebar-style",
+        "code",
+        "-lunr", 
+        "-search",
+        "search-plus",
+        "-sharing",
+        "sharing-plus",
+        "-highlight",
+        "pageview-count",
+        "chapter-fold",
+        "github",
+        "flexible-alerts",
+        "prism",
+        "back-to-top-button",
+        "auto-scroll-table",
+        "popup",
+        "insert-logo",
+        "edit-link",
+        "chart",
+        "page-treeview",
+        "codeblock-filename",
+        "klipse",
+        "theme-comscore",
+        "theme-mytest",
+        "chapter-fold",
+        "theme-default",
+        "sectionx",
+        "numbering",
+        "flexible-alerts",
+        "mycustompage-footer-ex",
+        "tags-info"
+    ],
+    "scripts": {
+        "start":"scripts/custom.js"
+    },
+    "pdf":
+    {
+        "pageNumbers": true,
+        "fontFamily": "Arial",
+        "fontSize": 12,
+        "paperSize": "a4",
+        "margin":
+        {
+            "right": 62,
+            "left": 62,
+            "top": 56,
+            "bottom": 56
+        }
+    },
+    "pluginsConfig":
+    {
+        "theme-default":
+        {
+            "showLevel": true
+        },
+        "theme-mytest": {
+            "environment": "development",
+            "environments": {
+                "development": {
+                    "cssBaseUrl": "http://localhost:4000/gitbook/gitbook-plugin-theme-mytest/"
+                },
+                "production": {
+                    "cssBaseUrl": "https://markweb.idv.tw:15001/gitbook/gitbook-plugin-theme-mytest/"
+                }
+            },
+            "js": [
+                "http://localhost:4000/gitbook/gitbook-plugin-theme-mytest/theme-toggle.js"
+            ]
+        },
+        "tags":
+        {
+            "placement": "bottom"
+        },
+        "flexible-alerts":
+        {
+            "style": "callout",
+            "comment":
+            {
+                "label": "Comment",
+                "icon": "fa fa-comments",
+                "className": "info"
+            }
+        },
+        "chapter-fold":
+        {
+            "expandAll": true
+        },
+        "numbering":
+        {
+            "heading1": "chapter",
+            "heading2": "section",
+            "heading3": "subsection"
+        },
+        "sidebar-style":
+        {
+            "title": "《ZaneHSU的筆記》",
+            "author": "ZaneHSU"
+        },
+        "hide-element":
+        {
+            "elements":
+            [
+                ".gitbook-link",
+                ".title",
+                ".treeview__copyright",
+                ".treeview__main-title"
+            ]
+        },
+        "edit-link":
+        {
+            "base": "https://markweb.idv.tw:10443/gitbooknpmproject/gitlabpageforgitbook/-/tree/master/",
+            "label": "編輯此頁面"
+        },
+        "customtheme":
+        {
+            "search-placeholder": "請輸入關鍵字進行搜尋",
+            "logo": "/README.assets/logo.svg",
+            "favicon": "/README.assets/favicon.ico"
+        },
+        "mycustompage-footer-ex":
+        {
+            "copyright": "Copyright &copy markweb 2025",
+            "markdown": false,
+            "update_label": "<i>最後更新文章時間：</i>",
+            "update_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "github":
+        {
+            "url": "https://github.com/Mark850409?tab=repositories"
+        },
+        "sharing":
+        {
+            "douban": false,
+            "facebook": true,
+            "google": true,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": true,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": false,
+            "qzone": false,
+            "stumbleupon": false,
+            "twitter": true,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": true,
+            "all":
+            [
+                "facebook",
+                "google",
+                "twitter",
+                "line",
+                "whatsapp"
+            ]
+        },
+        "insert-logo":
+        {
+            "url": "http://localhost:4000/logo.png",
+            "style": "background: none; max-height: 60px; min-height: 60px"
+        },
+        "prism":
+        {
+            "lang":
+            {
+                "python": "python",
+                "javascript": "javascript",
+                "ruby": "ruby",
+                "csharp": "csharp",
+                "bash": "bash",
+                "markup": "markup"
+            },
+            "ignore":
+            [],
+            "css":
+            [
+                "prismjs/themes/prism.css"
+            ]
+        }
+    }
+}
