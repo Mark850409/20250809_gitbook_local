@@ -32,7 +32,7 @@ ENV NODE_PATH=/usr/local/lib/node_modules
 COPY . .
 
 # 執行 Python 腳本生成 SUMMARY.md
-RUN python3 gitbook-auto-summary-simple.py -o .
+RUN python3 gitbook-auto-summary.py -o .
 
 # 執行 Python 腳本生成tags
 RUN python3 add_front_matter.py .
