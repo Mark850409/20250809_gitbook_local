@@ -22,10 +22,9 @@ RUN npm i -g \
     gitbook-cli@2.3.2 \
     moment-timezone@0.5 \
     moment@2 \
+    gitbook-plugin-theme-mytest \
     github-slugid@1 && gitbook --version
 	
-RUN npm i -g gitbook-plugin-theme-mytest
-
 # 設定 Node 可以找到全域模組（給外掛 require 用）
 ENV NODE_PATH=/usr/local/lib/node_modules
 
@@ -34,6 +33,9 @@ COPY . .
 
 # 執行 Python 腳本生成 SUMMARY.md
 RUN python3 gitbook-auto-summary-simple.py -o .
+
+# 執行 Python 腳本生成tags
+RUN python3 add_front_matter.py .
 
 # 安裝 GitBook 插件並建置
 RUN gitbook install && gitbook build . /out

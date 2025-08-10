@@ -1,15 +1,3 @@
----
-title: Jenkins自動化部署-安裝教學
-updated: 2024-07-23 13:29:30Z
-created: 2023-08-14 11:38:34Z
-latitude: 24.8287095
-longitude: 121.0169462
-altitude: 0
-tags:
-  - Jenkins
-  - install
----
-
 # 1 Jenkins自動化佈署-安裝教學
 
 ## 1.1 簡介

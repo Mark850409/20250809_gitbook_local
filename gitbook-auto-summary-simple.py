@@ -22,14 +22,14 @@ def generate_summary_recursive(directory, f, level, indent):
         full_path = os.path.join(directory, item)
         if os.path.isdir(full_path):
             header = item.replace('-', '*')  # Replace '-' with '*'
-            if header in ["styles", "_book", "node_modules", "scripts"]:
+            if header in ["styles", "_book", "node_modules", "scripts","image"]:
                 continue
             if indent:
                 f.write('\n{} {}\n\n'.format('#' * (level + 1), header))
             else:
                 f.write('\n{} {}\n\n'.format('#' * level, header))
             generate_summary_recursive(full_path, f, level + 1, indent)
-        elif item in ["SUMMARY.md", "CHANGELOG.md","tags.md"]:
+        elif item in ["SUMMARY.md", "CHANGELOG.md","tags.md","README.docker.md","README.md"]:
             continue
         elif item.endswith('.md'):
             header = directory.replace(".\\", "")

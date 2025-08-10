@@ -1,16 +1,3 @@
----
-title: Jenkins自動化部署-如何使用docker建立sonarqube並實現原始碼弱掃
-updated: 2024-07-25 14:10:38Z
-created: 2024-07-25 06:45:22Z
-latitude: 25.0329694
-longitude: 121.5654177
-altitude: 0
-tags:
-  - Jenkins
-  - Docker
-  - SonarQube
----
-
 # 1 如何使用docker建立sonarqube
 
 還沒有安裝Jenkins? 請參照這篇[[Jenkins自動化部署-安裝教學]]
