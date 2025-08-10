@@ -76,11 +76,11 @@
                     "cssBaseUrl": "http://localhost:4000/gitbook/gitbook-plugin-theme-mytest/"
                 },
                 "production": {
-                    "cssBaseUrl": "https://markweb.idv.tw:15001/gitbook/gitbook-plugin-theme-mytest/"
+                    "cssBaseUrl": "https://mynotes.zeabur.app/gitbook/gitbook-plugin-theme-mytest/"
                 }
             },
             "js": [
-                "http://localhost:4000/gitbook/gitbook-plugin-theme-mytest/theme-toggle.js"
+                "https://mynotes.zeabur.app/gitbook/gitbook-plugin-theme-mytest/theme-toggle.js"
             ]
         },
         "tags":
@@ -124,7 +124,7 @@
         },
         "edit-link":
         {
-            "base": "https://markweb.idv.tw:10443/gitbooknpmproject/gitlabpageforgitbook/-/tree/master/",
+            "base": "https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/refs/heads/master/",
             "label": "編輯此頁面"
         },
         "customtheme":
@@ -174,7 +174,7 @@
         },
         "insert-logo":
         {
-            "url": "http://localhost:4000/logo.png",
+            "url": "https://mynotes.zeabur.app/logo.png",
             "style": "background: none; max-height: 60px; min-height: 60px"
         },
         "prism":
