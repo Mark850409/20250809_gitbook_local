@@ -158,3 +158,9 @@ pipeline {
 
 
 ![](https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/master/image/20250810225909445.png)
+
+---
+tags: jenkins
+categories: jenkins
+
+---

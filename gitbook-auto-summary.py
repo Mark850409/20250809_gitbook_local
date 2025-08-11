@@ -13,13 +13,17 @@ EXCLUDE_ALLMD_DIRS = set(['image', 'scripts', 'styles'])
 
 README_DOT_MD = re.compile(r'^README\..+\.md$', re.IGNORECASE)
 
-def output_markdown(dire, base_dir, output_file, append, iter_depth=0):
+def output_markdown(dire, base_dir, output_file, append, iter_depth=0, chapter_counter=None):
     """
     遞迴列出所有目錄與檔案。
     - 不建立 0-README.md
     - 目錄主連結：README.md > 第一個 md 檔（排除 README.*.md）> 無連結
     - 產生 all.md（排除 EXCLUDE_ALLMD_DIRS）
     """
+    # 初始化章節計數器
+    if chapter_counter is None:
+        chapter_counter = [0]
+    
     for filename in sort_dir_file(os.listdir(dire), dire):
         if filename in GLOBAL_IGNORES:
             continue
@@ -28,16 +32,23 @@ def output_markdown(dire, base_dir, output_file, append, iter_depth=0):
 
         if os.path.isdir(file_or_path):
             if mdfile_in_dir(file_or_path):
+                # 第一層目錄增加 Chapter 編號
+                if iter_depth == 0:
+                    chapter_counter[0] += 1
+                    chapter_title = "Chapter {} {}".format(chapter_counter[0], filename)
+                else:
+                    chapter_title = filename
+                
                 # 目錄主連結目標
                 index_md = choose_index_md(file_or_path)
                 if index_md:
                     output_file.write(
                         '  ' * iter_depth +
                         '* [{}]({}/{})\n'.format(
-                            filename, rel_part(base_dir, file_or_path), index_md)
+                            chapter_title, rel_part(base_dir, file_or_path), index_md)
                     )
                 else:
-                    output_file.write('  ' * iter_depth + '* {}\n'.format(filename))
+                    output_file.write('  ' * iter_depth + '* {}\n'.format(chapter_title))
 
                 # 產生 all.md（除特定排除目錄）
                 if filename not in EXCLUDE_ALLMD_DIRS:
@@ -49,7 +60,7 @@ def output_markdown(dire, base_dir, output_file, append, iter_depth=0):
                     )
 
                 # 繼續遞迴
-                output_markdown(file_or_path, base_dir, output_file, append, iter_depth + 1)
+                output_markdown(file_or_path, base_dir, output_file, append, iter_depth + 1, chapter_counter)
 
         else:
             # 忽略 README.*.md
@@ -69,18 +80,24 @@ def output_markdown(dire, base_dir, output_file, append, iter_depth=0):
 def choose_index_md(dire):
     """
     選目錄索引檔：
-    1) README.md（不分大小寫）
-    2) 其餘 md 檔中的第一個（排除 SUMMARY* / all.md / README.*.md）
-    3) 若無則回傳 None
+    1) all.md（優先）
+    2) README.md（不分大小寫）
+    3) 其餘 md 檔中的第一個（排除 SUMMARY* / all.md / README.*.md）
+    4) 若無則回傳 None
     """
     entries = sorted(os.listdir(dire), key=str.lower)
 
-    # 1) README.md
+    # 1) all.md 優先
+    for name in entries:
+        if name.lower() == 'all.md':
+            return name
+
+    # 2) README.md
     for name in entries:
         if name.lower() == 'readme.md':
             return name
 
-    # 2) 第一個 md（排除不需要）
+    # 3) 第一個 md（排除不需要）
     for name in entries:
         if not is_markdown_file(name):
             continue

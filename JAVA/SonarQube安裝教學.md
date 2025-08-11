@@ -181,7 +181,7 @@ docker compose up -d --build
 ![](https://raw.githubusercontent.com/Mark850409/20250809_gitbook_local/master/image/20250809212834135.png)
 
 ---
-tags: EAFF
-categories: EAFF
+tags: JAVA
+categories: JAVA
 
 ---
